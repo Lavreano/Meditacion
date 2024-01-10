@@ -1,0 +1,723 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: 4.5em 3em;
+}
+
+section > p {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  line-height: 2rem;
+}
+
+.Seccion-Fondo {
+  background-color: #F1F4FB;
+  width: 100%;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1em;
+  margin-bottom: 1.5em ;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+/*Navegador*/
+
+nav{
+  background: #3A5985;
+  border-bottom: 5px #058140 solid;
+  height: 150px;
+  width: 100%;
+  
+}
+.enlace{
+  position: absolute;
+  padding: 1.5em 2em;
+  
+}
+.logo{
+  width: 150px;
+  height: 103px;
+}
+
+nav ul{
+  z-index: 1;
+  float: right;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 1em;
+}
+nav ul li a{
+  color: #fff;
+  background-color: #058140;
+  transition: 0.4s;
+  font-size: 18px;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+li a.active, li a:hover{
+  background: white;
+  transition: .5s;
+  color: #058140;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+#home {
+  background: url(../img/home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
+
+/* ---------------- HOME ------------ */
+    
+  #article-home {
+    width: 30%;
+    height:auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1.2em;
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    padding: 3em;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  }
+
+  #article-home p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.8rem;
+  }
+
+  button.empezar-ahora {
+    font-size: 1em;
+    background-color: #86C059;
+    color: white;
+    border: 0.1em solid white;
+    border-radius: 1em;
+    margin-top: 30px;
+    padding: 1em 2.5em;
+  }
+
+  button.empezar-ahora:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  button.empezar-ahora:active {
+    background-color: white;
+    color: #86C059;
+    border: 0.1em solid #86C059;
+    border-radius: 1em;
+  }
+
+  /*---------Primera sección (Meditacion)----------*/
+
+section > #Meditacion {
+    white-space: pre-line;
+}
+
+.Seccion1-Columna {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8em;
+}
+
+.Seccion1-Columna p {
+  margin-left: 4em;
+  }
+
+/*------------ Segunda seccion (Beneficios) -------------*/
+
+section > #Beneficios {
+    white-space: pre-line;
+}
+
+.ColumnasBeneficios {
+  display: grid;
+}
+
+.Beneficios-Articulos {
+  display: flex;
+  flex-direction: row;
+  margin: 2em 0
+}
+
+.Beneficios-Texto {
+  margin: 0 2em;
+}
+
+.m-right {
+margin-left: 4em;
+}
+
+/*---------Tercera seccion (Como Meditar)-----------*/
+
+.Column-Meditar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.Fila-Meditar {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.Parrafo-Meditar {
+ padding-left: 2em;
+ padding-right: 2em;
+}
+
+#Meditacion-Youtube{
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+#Meditacion-Youtube h3 {
+  margin-bottom: 2em;
+}
+
+iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Contenedor-Consejos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.Consejos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.Consejos p {
+  padding: 0 2em;
+}
+
+/*------------ Cuarta seccion (Tecnicas) ---------- */
+
+#Parrafos-Tecnicas {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 2em 0;
+}
+
+.ParrafoIndividual {
+  padding-right: 4em;
+  margin-bottom: 3em;
+}
+.ParrafoIndividual p {
+  margin-top: -1em;
+}
+
+.Columnas-Recursos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.Fila-Recursos {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2em;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.t-p-recursos {
+  margin-left: 2em;
+  margin-top: -2em;
+  padding: 0 1em;
+}
+
+.t-p-recursos p {
+  margin-top: -1em;
+}
+
+/*----------Quinta seccion (Formulario)----------*/
+
+.Formulario h3{
+  text-align: center;
+  color: white;
+}
+
+.Formulario {
+background: linear-gradient(to bottom, #3A5985, #618FCA);;
+        width: 50%;
+        height: 50%;
+        border-radius: 2em;
+        padding: 1.5em 6em;
+        margin: 0 auto;
+}
+
+input { 
+  display: block;
+  background-color: white;
+  border: 1px solid #bbb;
+  border-radius: 0.8em;
+  padding: 0.5em 1em;
+  margin-bottom: 2em;
+  width: 100%;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  border-radius: 0.4em;
+  width: 100%;
+  background-color: #86C059; 
+  color: white;
+  font-size: 1.2rem;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+#AnchoForm {
+  padding: 3em 1em;
+}
+
+/*-------------- Footer ----------- */
+
+footer {
+  background-color: #3A5985;
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+footer p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+footer h2 {
+  margin-top: 1em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 2em;
+}
+
+footer ul li a:hover {
+  transition: 0.4s;
+  color: #86C059;
+  border-radius: 0.5em;
+  padding: 5px 10px;
+  border-bottom: 1px solid #86C059;
+  }
+
+  .IconosFooter {
+    display: flex;
+  justify-content: space-around;;
+  margin-bottom: 2em;
+  }
+
+  .IconosFooter a:hover {
+    background-color: #86C059;
+    transform: scale(1.03);
+    border-radius: 10em;
+  }
+
+  .datosalumno {
+      display:flex;
+      flex-wrap: wrap ;
+      flex: 1;
+      justify-content: space-between;
+      margin: 0;
+      margin-top: 2em;
+      border-top: #058140 solid 5px;
+    }
+
+    .datosalumno p {
+      margin: 2em 2em;
+      margin-bottom: -1em;
+    }
+
+
+  /*------------ Media queries MOVIL -----------*/
+
+  @media screen and (max-width: 480px){
+
+    .checkbtn{
+      margin-top: 1em;
+      display: block;
+   }
+   
+   ul{
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: #3A5985;
+       top: 100px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+   }
+   nav ul li{
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+   }
+   nav ul li a{
+       font-size: 20px;
+   }
+   li a:hover, li a.active{
+       background: white;
+       color: #86C059;
+   }
+   #check:checked ~ ul{
+       left:0;
+   }
+
+  #home {
+    width: 100%;
+    background-image: url(../img/movil/home-movil.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #article-home p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5em;
+  }
+
+  button.empezar-ahora {
+    font-size: 1em;
+    border-radius: 1em;
+    margin-top: 30px;
+    padding: 1em 2.5em;
+  }
+
+  .Column-Meditar {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .Fila-Meditar {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .Fila-Meditar img {
+    order: 1; }
+  
+  .Parrafo-Meditar {
+    order: 2; 
+    text-align: right; 
+    padding: 1em 0;
+    margin: 1em 0;
+  }
+
+  }
+  
+ /*------------ Media queries TABLET -----------*/
+
+  @media screen and (max-width: 768px) {
+
+    .checkbtn{
+     margin-top: 1em;
+     display: block;
+  }
+  
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #3A5985;
+      top: 100px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: white;
+      color: #86C059;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+
+    #article-home {
+      width: 60%;
+      height: auto;
+      top: 30%;
+      left: 10%;
+      padding: 2em;
+    }
+  
+    #article-home p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      text-align: left;
+      line-height: 1.5em;
+    }
+  
+    button.empezar-ahora {
+      font-size: 1em;
+      border-radius: 1em;
+      margin-top: 30px;
+      padding: 1em 2em;
+    }
+
+    #home {
+      width: 100%;
+      background-image: url(../img/tablet/home-tablet.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .Seccion1-Columna {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 8em;
+    }
+
+    .Seccion1-Columna p{
+      margin-top: 2em;
+      margin-left: auto;
+    }
+
+    .Seccion-Fondo {
+      width: 100%;
+    }
+    
+    .Beneficios-Articulos {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .Beneficios-Texto {
+      margin: auto;
+      text-align: left;
+      margin-bottom: 3em;
+    }
+
+   .m-right {
+      order: -1;
+    }
+
+    .Column-Meditar {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    
+    .Fila-Meditar {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .Parrafo-Meditar {
+     text-align: left;
+     margin-left: 10px;
+    }
+
+    .Meditar-Left {
+      order: 1;
+    }
+
+    .Fila-Meditar img {
+      order: 1;
+    }
+
+    .Contenedor-Consejos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    .Consejos {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+
+    #Parrafos-Tecnicas {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    
+
+    .Columnas-Recursos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      
+      
+      .Fila-Recursos {
+        display: flex;
+        flex-direction: row;
+      }
+     
+      footer ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        list-style: none;
+        text-align: left;
+      }
+
+      footer ul li {
+        margin: 1em 0;
+      }
+
+      footer h2 {
+        text-align: left;
+        margin: 2em;
+        margin-left: 1.3em;
+      }
+
+      .datosalumno {
+        text-align: center;
+        margin: 0 2em;
+      }
+
+    h2, h3, h4 {
+      text-align: left;
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+    }
+
+    img {
+    max-width: 100%;
+    }
+
+    .Formulario {
+              border-radius: 2em;
+              padding: 1.5em 6em;
+              margin: 0 auto;
+      }
+      
+      input { 
+        display: block;
+        border-radius: 0.8em;
+        padding: 0.5em 1em;
+        margin-bottom: 2em;
+        width: 100%;
+        font-size: 1rem;
+      }
+      
+      input[type="submit"] {
+        border-radius: 0.4em;
+        width: 100%;
+        font-size: 1.2rem;
+      }
+
+  .datosalumno {
+  border-top: #058140 solid 5px;
+  text-align: left;
+  margin: 0;
+}
+.datosalumno p{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+
+
+  }
