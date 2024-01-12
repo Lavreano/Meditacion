@@ -3,7 +3,6 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -318,9 +317,8 @@ iframe {
 }
 
 .Formulario {
-background: linear-gradient(to bottom, #3A5985, #618FCA);;
-        width: 50%;
-        height: 50%;
+background: linear-gradient(to bottom, #3A5985, #618FCA);
+width: 600px;
         border-radius: 2em;
         padding: 1.5em 6em;
         margin: 0 auto;
@@ -339,7 +337,6 @@ input {
 
 input[type="submit"] {
   border-radius: 0.4em;
-  width: 100%;
   background-color: #86C059; 
   color: white;
   font-size: 1.2rem;
@@ -420,6 +417,235 @@ footer ul li a:hover {
     }
 
 
+
+/*------------ Media queries TABLET -----------*/
+
+@media screen and (max-width: 768px) {
+
+  .checkbtn{
+   margin-top: 1em;
+   display: block;
+}
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #3A5985;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+}
+li a:hover, li a.active{
+    background: white;
+    color: #86C059;
+}
+#check:checked ~ ul{
+    left:0;
+}
+
+  #article-home {
+    width: 60%;
+    height: auto;
+    top: 30%;
+    left: 10%;
+    padding: 2em;
+  }
+
+  #article-home p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5em;
+  }
+
+  button.empezar-ahora {
+    font-size: 1em;
+    border-radius: 1em;
+    margin-top: 30px;
+    padding: 1em 2em;
+  }
+
+  #home {
+    width: 100%;
+    background-image: url(../img/tablet/home-tablet.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .Seccion1-Columna {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8em;
+  }
+
+  .Seccion1-Columna p{
+    margin-top: 2em;
+    margin-left: auto;
+  }
+
+  .Seccion-Fondo {
+    width: 100%;
+  }
+  
+  .Beneficios-Articulos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Beneficios-Texto {
+    margin: auto;
+    text-align: left;
+    margin-bottom: 3em;
+  }
+
+ .m-right {
+    order: -1;
+  }
+
+  .Column-Meditar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .Fila-Meditar {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .Parrafo-Meditar {
+   text-align: left;
+   margin-left: 10px;
+  }
+
+  .Meditar-Left {
+    order: 1;
+  }
+
+  .Fila-Meditar img {
+    order: 1;
+  }
+
+  .Contenedor-Consejos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .Consejos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  #Parrafos-Tecnicas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+
+  .Columnas-Recursos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    
+    
+    .Fila-Recursos {
+      display: flex;
+      flex-direction: row;
+    }
+   
+    footer ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      list-style: none;
+      text-align: left;
+    }
+
+    footer ul li {
+      margin: 1em 0;
+    }
+
+    footer h2 {
+      text-align: left;
+      margin: 2em;
+      margin-left: 1.3em;
+    }
+
+    .datosalumno {
+      text-align: center;
+      margin: 0 2em;
+    }
+
+  h2, h3, h4 {
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  img {
+  max-width: 100%;
+  }
+
+  .Formulario {
+            border-radius: 2em;
+            padding: 1em 6em;
+            margin: 0 auto;
+            max-width: 50%;
+    }
+    
+    input { 
+      display: block;
+      border-radius: 0.8em;
+      padding: 0.5em 1em;
+      margin-bottom: 2em;
+      width: 100%;
+      font-size: 1rem;
+    }
+    
+    input[type="submit"] {
+      border-radius: 0.4em;
+      width: 100%;
+      font-size: 1.2rem;
+    }
+
+.datosalumno {
+border-top: #058140 solid 3px;
+text-align: left;
+margin: 0;
+}
+.datosalumno p{
+margin-top: 2em;
+margin-bottom: 1em;
+margin-left: 2em;
+}
+
+footer nav {
+  display: none;
+}
+
+footer h2 {text-align: center;}
+}
+
+
   /*------------ Media queries MOVIL -----------*/
 
   @media screen and (max-width: 480px){
@@ -478,13 +704,12 @@ footer ul li a:hover {
   }
 
   .Column-Meditar {
-    display: flex;
-    flex-direction: row;
+    display: grid;
   }
   
   .Fila-Meditar {
-    display: flex;
-    align-items: center; 
+    display: grid;
+    place-items: center; 
   }
   
   .Fila-Meditar img {
@@ -492,232 +717,43 @@ footer ul li a:hover {
   
   .Parrafo-Meditar {
     order: 2; 
-    text-align: right; 
     padding: 1em 0;
     margin: 1em 0;
   }
 
+  .Consejos {
+    display: grid;
+    place-items: center;
   }
-  
- /*------------ Media queries TABLET -----------*/
+  .Consejos img {margin-bottom: 1.5em;}
 
-  @media screen and (max-width: 768px) {
+  .Fila-Recursos {
+    display: grid;
+    place-items: center;
+  }
+  .Fila-Recursos {
+    margin-bottom: 1.5em;
+  }
+  .t-p-recursos {margin: 0 auto; padding: 0 auto;}
 
-    .checkbtn{
-     margin-top: 1em;
-     display: block;
-  }
-  
-  ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #3A5985;
-      top: 100px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-  }
-  nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-  }
-  nav ul li a{
-      font-size: 20px;
-  }
-  li a:hover, li a.active{
-      background: white;
-      color: #86C059;
-  }
-  #check:checked ~ ul{
-      left:0;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-    #article-home {
-      width: 60%;
-      height: auto;
-      top: 30%;
-      left: 10%;
-      padding: 2em;
-    }
-  
-    #article-home p {
-      font-size: 1.1rem;
-      font-weight: 400;
-      text-align: left;
-      line-height: 1.5em;
-    }
-  
-    button.empezar-ahora {
-      font-size: 1em;
-      border-radius: 1em;
-      margin-top: 30px;
-      padding: 1em 2em;
-    }
-
-    #home {
-      width: 100%;
-      background-image: url(../img/tablet/home-tablet.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .Seccion1-Columna {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 8em;
-    }
-
-    .Seccion1-Columna p{
-      margin-top: 2em;
-      margin-left: auto;
-    }
-
-    .Seccion-Fondo {
-      width: 100%;
-    }
-    
-    .Beneficios-Articulos {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .Beneficios-Texto {
-      margin: auto;
-      text-align: left;
-      margin-bottom: 3em;
-    }
-
-   .m-right {
-      order: -1;
-    }
-
-    .Column-Meditar {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-    }
-    
-    .Fila-Meditar {
-      display: flex;
-      flex-direction: row;
-    }
-    
-    .Parrafo-Meditar {
-     text-align: left;
-     margin-left: 10px;
-    }
-
-    .Meditar-Left {
-      order: 1;
-    }
-
-    .Fila-Meditar img {
-      order: 1;
-    }
-
-    .Contenedor-Consejos {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-    }
-
-    .Consejos {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 2em;
-      margin-top: 2em;
-    }
-
-    #Parrafos-Tecnicas {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-    }
-    
-
-    .Columnas-Recursos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-      }
-      
-      
-      .Fila-Recursos {
-        display: flex;
-        flex-direction: row;
-      }
-     
-      footer ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        list-style: none;
-        text-align: left;
-      }
-
-      footer ul li {
-        margin: 1em 0;
-      }
-
-      footer h2 {
-        text-align: left;
-        margin: 2em;
-        margin-left: 1.3em;
-      }
-
-      .datosalumno {
-        text-align: center;
-        margin: 0 2em;
-      }
-
-    h2, h3, h4 {
-      text-align: left;
-      font-size: 1.5em;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6rem;
-    }
-
-    img {
-    max-width: 100%;
-    }
-
-    .Formulario {
-              border-radius: 2em;
-              padding: 1.5em 6em;
-              margin: 0 auto;
-      }
-      
-      input { 
-        display: block;
-        border-radius: 0.8em;
-        padding: 0.5em 1em;
-        margin-bottom: 2em;
-        width: 100%;
-        font-size: 1rem;
-      }
-      
-      input[type="submit"] {
-        border-radius: 0.4em;
-        width: 100%;
-        font-size: 1.2rem;
-      }
-
-  .datosalumno {
-  border-top: #058140 solid 5px;
-  text-align: left;
-  margin: 0;
+  .Formulario {
+    max-width: 45%;
+    margin-left: -20px;
 }
-.datosalumno p{
-  margin-top: 2em;
-  margin-bottom: 1em;
-  margin-left: 2em;
-}
-
-
+  .Formulario h3 {
+    margin-left: -20px;
+  }
+  input {
+    margin-bottom: 2em; 
+    width: 100%;
+  }
 
   }
+
+
